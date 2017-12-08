@@ -1,0 +1,12 @@
+12.下列程序有什么错误？
+public class Takecare
+{
+	int a = 90;
+	static float b = 10.98f;
+	public static void main(String[] args)
+	{
+		float c = a + b;
+		System.out.println("c = " + c);
+	}
+}
+答: 语句float c=a+b;错误。原因是类方法main操作了实例变量a。
