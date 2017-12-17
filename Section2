@@ -1,0 +1,65 @@
+4.下列哪些语句是错误的：
+int x = 8;
+byte b = 127;
+b = x;
+答：b=x语句是错误的。因为高级变量给低级变量赋值时，一定要显示转换例如：b = (byte)x;
+--------------------------
+--------------------------
+5.下列程序的输出结果是什么？
+public class E
+{
+	public static void main(String args[])
+	{
+		long[] a = {1,2,3,4};
+		long[] b = {100, 200, 300, 400, 500};
+		b = a;
+		System.out.println("数组b的长度：" + b.length);//数组b的长度是4
+		System.out.println("b[0] = " + b[0]);//b[0] = 1;
+		
+	}
+}
+--------------------------
+--------------------------
+6.上级运行下列程序，注意观察输出的结果。
+public class E
+{
+	pubilc static void main(String args[])
+	{
+		for(int i = 20302; i <= 20322; i++)
+		{
+			System.out.println((char)i);//20322
+		}
+	}
+}
+输出的结果：低 住 佐 佑 佒 体 佔 何 佖 佗 佘 余 佚 佛 作 佝 佞 佟 你 佡 佢
+--------------------------
+--------------------------
+7.System.out,println("你好");可输出字符串，也可以使用System.out.println()输出变量或者表达式的值，
+只需要使用并置符号"+"将变量，表达式或一个常数值雨一个字符串并置即可，如:System.out.println(""+x);
+System.out.println(":" + 123 + "大于" + 122);等。
+上机调试下列程序，注意观察结果，特别注意System.out.print()和System.out.println()的区别。
+public class OutputDate
+{
+	public static void main(String [] args)
+	{
+		int x = 234, y = 432;
+		System.out.println(x + "<" + (2*x));//234<468
+		System.out.print("我输出结果后不会车");
+		System.out.println("我输出结果后自动回车到下一行");
+		System.out.println("x + y = " + (x + y));//x+y=666
+		System.out.println(" " + x + y + "=234432");//234432=234432
+	}
+}
+--------------------------
+--------------------------
+8.编写一个Java应用程序，输出全部的希腊字母。
+public class E
+{
+	public static void main(String [] args)
+	{
+		for(int i = 945; i <= 971; i++)
+		{
+			System.out.print((char)i + " ");
+		}
+	}
+}
