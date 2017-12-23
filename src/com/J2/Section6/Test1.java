@@ -1,4 +1,4 @@
-package om.J2.Section6;
+package com.J2.Section6;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
