@@ -27,6 +27,7 @@ public class Test10_7 {
 		
 		int len = fis.read(buf);
 		
+		//将数据封装到一个字节数组当中
 		char[] c = new String(buf, 0, len).toCharArray();
 		
 		for(int i = c.length-1; i >= 0; i--){
